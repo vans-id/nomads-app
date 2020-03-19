@@ -1,0 +1,694 @@
+// Catatan:
+// font-weight:
+// 300 - light
+// 400 - regular
+// 700 - bold
+
+// font-family: 'Assistant', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+body {
+    background-color: #fff;
+    font-family: "Assistant", sans-serif;
+    color: #071c4d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+}
+
+.btn-custom-alpha {
+    color: #fff;
+    background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+    &:hover {
+        background-image: linear-gradient(19deg, #046a81 0%, #5b0683 100%);
+        color: #fff;
+    }
+}
+
+// Navbar
+.navbar-brand {
+    img {
+        max-height: 40px;
+    }
+}
+
+.btn-navbar-right {
+    // margin-top: -10px !important;
+    // margin-bottom: -8px !important;
+    // margin-right: -18px !important;
+
+    // height: 70px;
+    // border-radius: 0;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #21d4fd;
+}
+
+// .btn-login {
+//     background-color: #071c4d;
+//     color: #fff;
+
+//     &:hover {
+//         background-color: #1e3771;
+//         color: #fff;
+//     }
+// }
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #9e9d9d !important;
+            font-weight: 400;
+
+            &.active {
+                color: #071c4d !important;
+            }
+        }
+    }
+}
+
+// Header
+header {
+    padding: 230px 0 165px;
+    background-image: url("../images/header.png");
+    background-size: cover;
+    margin-top: -120px;
+
+    h1,
+    p {
+        color: #fff;
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .btn-get-started {
+        color: #fff;
+        border: 1px solid #f8ce35;
+        background-image: linear-gradient(70deg, #f8ce35 0%, #f76b1c 100%);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 20px;
+
+        &:hover {
+            background-image: linear-gradient(90deg, #ceaa28 0%, #bd5316 100%);
+            color: #fff;
+        }
+    }
+}
+
+// Statistics
+.section-stats {
+    margin-top: -50px;
+
+    .stats-detail {
+        padding-top: 16px;
+        background-color: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+// Popular
+.section-popular {
+    min-height: 540px;
+    // background-color: #051334;
+    background-image: linear-gradient(180deg, #051334 0%, #667eea 100%);
+    margin-top: -50px;
+    margin-bottom: -200px;
+
+    .section-popular-heading {
+        margin-top: 150px;
+
+        h2,
+        p {
+            color: #fff;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.section-popular-content {
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            background: #ddd;
+            color: #fff;
+            text-shadow: 1px 1px 0 #071c4d, -1px 1px 0 #071c4d,
+                1px -1px 0 #071c4d, -1px -1px 0 #071c4d, 0px 1px 0 #071c4d,
+                0px -1px 0 #071c4d, -1px 0px 0 #071c4d, 1px 0px 0 #071c4d,
+                2px 2px 0 #071c4d, -2px 2px 0 #071c4d, 2px -2px 0 #071c4d,
+                -2px -2px 0 #071c4d, 0px 2px 0 #071c4d, 0px -2px 0 #071c4d,
+                -2px 0px 0 #071c4d, 2px 0px 0 #071c4d, 1px 2px 0 #071c4d,
+                -1px 2px 0 #071c4d, 1px -2px 0 #071c4d, -1px -2px 0 #071c4d,
+                2px 1px 0 #071c4d, -2px 1px 0 #071c4d, 2px -1px 0 #071c4d,
+                -2px -1px 0 #071c4d; //text shadow
+            padding: 30px;
+            background-size: 100% 100%;
+            margin-bottom: 20px;
+        }
+
+        .travel-country {
+            font-size: 18px;
+        }
+
+        .travel-location {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .travel-button {
+            .btn-travel-details {
+                // background: #ff9e53;
+                // color: #fff;
+                // text-shadow: none;
+
+                // &:hover {
+                //     background: #f7aa6e;
+                //     color: #fff;
+                //     text-shadow: none;
+                // }
+                color: #fff;
+                text-shadow: none;
+                border: 1px solid #f8ce35;
+                background-image: linear-gradient(
+                    70deg,
+                    #f8ce35 0%,
+                    #f76b1c 100%
+                );
+                border-radius: 50px;
+
+                &:hover {
+                    background-image: linear-gradient(
+                        90deg,
+                        #ceaa28 0%,
+                        #bd5316 100%
+                    );
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.section-networks {
+    margin-top: -200px;
+    padding-top: 240px;
+    background-color: #fff;
+    padding-bottom: 50px;
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.section-testimonial-heading {
+    background: linear-gradient(#fff 0%, #d7e1fa 100%);
+    padding-top: 50px;
+    min-height: 539px;
+
+    h2 {
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 13px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+
+    .card-testimonial {
+        padding: 40px 25px 10px;
+        border-radius: 11px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to top, #e9defa 0%, #fbfcdb 100%);
+
+        .testimonial-content {
+            min-height: 380px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .testimonial {
+            font-weight: 300;
+            font-size: 18px;
+            color: #6e6e6e;
+            min-height: 160px;
+        }
+
+        .trip-to {
+            font-size: 22px;
+            color: #6e6e6e;
+        }
+
+        hr {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+
+    .btn-get-started {
+        color: #fff;
+        border: 1px solid #f8ce35;
+        background-image: linear-gradient(70deg, #f8ce35 0%, #f76b1c 100%);
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 20px;
+
+        &:hover {
+            background-image: linear-gradient(90deg, #ceaa28 0%, #bd5316 100%);
+            color: #fff;
+        }
+    }
+
+    .btn-need-help {
+        background-color: #f2f2f2;
+        color: #c3c3c3;
+        border-radius: 50px;
+        font-weight: 300;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #a1a1a1;
+            color: #fff;
+        }
+    }
+}
+
+.section-footer {
+    h5 {
+        font-weight: 600;
+    }
+
+    a {
+        color: #071c4d;
+    }
+}
+
+.section-details-header {
+    margin-top: -70px;
+    min-height: 310px;
+    background-image: linear-gradient(
+        to top,
+        #bdc2e8 0%,
+        #bdc2e8 1%,
+        #e6dee9 100%
+    );
+}
+
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .breadcrumb-item {
+        color: #071c4d;
+        font-weight: 300;
+
+        &.active {
+            font-weight: 600;
+        }
+    }
+
+    .card-details {
+        padding: 30px;
+        border-radius: 11px;
+
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            color: #b1b1b1;
+            white-space: pre-line;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .attendee {
+            table {
+                thead {
+                    font-weight: 300;
+                    color: #071c4d;
+                    font-size: 18px;
+                }
+                tbody {
+                    color: #071c4d;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .trip-informations {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            td {
+                color: #b1b1b1;
+                font-weight: 300;
+                font-size: 18px;
+            }
+
+            .text-blue {
+                color: #071c4d;
+                font-weight: 600;
+            }
+
+            .text-orange {
+                color: #ff9e53;
+                font-weight: 600;
+            }
+        }
+
+        .payment-instructions {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .bank {
+            .bank-item {
+                h3 {
+                    font-size: 16px;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .description {
+                    overflow: hidden;
+                    margin-left: 10px;
+                    float: left;
+
+                    p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #071c4d;
+                    }
+                }
+            }
+
+            .bank-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+        }
+
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #b1b1b1;
+        }
+
+        .gj-datepicker {
+            .datepicker {
+                border-right: 0;
+            }
+
+            .input-group-append {
+                .btn {
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .btn-add-now {
+            background-color: #071c4d;
+            color: #fff;
+
+            &:hover {
+                background-color: #1b3b86;
+                color: #fff;
+            }
+        }
+    }
+
+    .features {
+        margin-top: 20px;
+
+        .description {
+            margin-left: 10px;
+            overflow: hidden;
+            float: left;
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .features-image {
+            width: 45px;
+            height: 45px;
+            float: left;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #071c4d;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .gallery {
+        .xzoom-container {
+            display: block;
+            width: 100%;
+
+            .xzoom {
+                box-shadow: none;
+                margin-bottom: 30px;
+            }
+        }
+
+        .xactive {
+            border: 4px solid #1abc9c;
+            box-shadow: none;
+        }
+    }
+
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0px;
+
+        h2 {
+            font-weight: 600;
+        }
+    }
+
+    .members {
+        .member-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .member {
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .join-container {
+        margin-top: -16px;
+    }
+
+    .btn-join-now {
+        border-radius: 11px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: #fff;
+        border: 1px solid #fad961;
+        background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+
+        &:hover {
+            background-image: linear-gradient(90deg, #ceaa28 0%, #bd5316 100%);
+            color: #fff;
+        }
+    }
+    .btn-join-later {
+        border-radius: 11px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        color: #fff;
+        background-color: #393b41;
+
+        &:hover {
+            background-color: #585a5f;
+            color: #fff;
+        }
+    }
+}
+
+.section-success {
+    height: 90vh;
+
+    h1 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: #b1b1b1;
+    }
+
+    .btn-homepage {
+        border-radius: 40px;
+        color: #fff;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+        &:hover {
+            background-image: linear-gradient(19deg, #046a81 0%, #5b0683 100%);
+            color: #fff;
+        }
+    }
+}
+
+.section-package-header {
+    margin-top: -70px;
+    min-height: 310px;
+    background-image: linear-gradient(
+        to top,
+        #f3e7e9 0%,
+        #e3eeff 99%,
+        #e3eeff 100%
+    );
+}
+
+.section-packages {
+    margin-top: -140px;
+}
+
+.login-container {
+    @media (min-width: 992px) {
+        background: linear-gradient(90deg, #fff 65%, #e4e6eb 35%);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.page-login {
+    height: 100vh;
+
+    .btn-login {
+        color: #fff;
+        border: 1px solid #f8ce35;
+        background-image: linear-gradient(70deg, #f8ce35 0%, #f76b1c 100%);
+        border-radius: 50px;
+
+        &:hover {
+            background-image: linear-gradient(90deg, #ceaa28 0%, #bd5316 100%);
+            color: #fff;
+        }
+    }
+
+    .section-left {
+        h1 {
+            font-family: "Playfair Display";
+            font-weight: bold;
+            font-size: 50px;
+            color: #071c4d;
+        }
+    }
+
+    .section-right {
+        a {
+            color: #a1a1a1;
+        }
+    }
+}
